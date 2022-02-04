@@ -2,48 +2,55 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers - Studios Ghibli</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <title>Data Lovers-Studios Ghibli</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
+
   <body>
     <header>
-      <div class="containerLogo">
-        <img src="./img/Studio_Ghibli_logo.svg.png" class="ghiblisLogo" alt="">
-      </div>
       <nav>
-        <div id="navBar">
-          <div id="funFactsIcon">
-          <img src="./img/fun facts.png" alt="" class="funFacts">
-          </div>
-          <input type="text" placeholder="Search" id="inputSearch"> <i class="fas fa-search"></i>
+        <div class="logoStudiosG">
+          <img src="./imagenes/Studio_Ghibli 1.png">
         </div>
-        </nav>
+        <div class="funFacts">
+          <a href="#"><img src="./imagenes/funfacts.png"></a>
+        </div>
+        <div class="searchInput">
+          <input type="search" id="search-Icon" placeholder="Search">
+          <span class="fas fa-search" id="iconSearch"></span>
+        </div>      
+      </nav>
     </header>
-  <main> 
-    <div> 
-      <img src="./img/kikis.jpg" alt="" class="kikisPicture">
-      <div>
-      <p> Kiki's delivery service </p>
-      <p>4.8/5 <img src="./img/Star 1.png" alt=""></p>
-      </div>  
-    </div>
-    <section></section>
-    <section></section>
-  </main>
-     <footer>
+    
+    <main> 
+      <div class="initialPicture"> 
+        <img src="./imagenes/kikis.jpg" alt="" class="kikisPicture">
+        <div class="posterText">
+          <p id="bigText"> Kiki's delivery service </p>
+          <p id="smallText">4.8/5 <img src="./img/Star 1.png" alt=""></p>
+        </div>    
+      </div>
+      <section class="allMoviesAndFilter">
+        <p id="allMovies">All Movies</p>
+      </section>
+      <section class="movieList">
+        <div id="moviesList"></div>
+      </section>
+    </main>
+
+    <footer>
       <div class="footerItems">
-        <div class="footerContent"><a href="https://github.com/sonifeg"><i class="fab fa-github"></i></a>
+        <div class="footerContent"><a href="https://github.com/sonifeg"><i class="fab fa-github"class="iconGit"></i></a>
         </div>
             <p class="footerContent">For educational purposes only</p>
-            <div class="footerContent"><a href="https://github.com/ziomarajimenez"><i class="fab fa-github"></i></a>
+            <div class="footerContent"><a href="https://github.com/ziomarajimenez"><i class="fab fa-github" class="iconGit"></i></a>
         </div>
       </div> 
     </footer>
-
-    <div id="root"></div>
     <script src="main.js" type="module"></script>
-    <script src="data.js"> </script>
   </body>
+
 </html>

@@ -13,8 +13,10 @@
 
 // estas funciones son de ejemplo
 
-export const example = () => {
-  return 'example';
+//funcion poster con titulo
+export const filmPosters = (movies) => {
+  let movie = [movies.poster, movies.title, movies.description];
+  return movie;
 };
 
 export const anotherExample = () => {
