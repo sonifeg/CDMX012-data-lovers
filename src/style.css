@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*General*/
 *{
   margin: 0;
@@ -101,10 +100,9 @@ margin-left: 600px;
   margin-top: 40px;
   font-style: normal;
   position: relative;
-  display: grid;
+   
 }
 .movieList{
-  display: grid;
   background: rgba(255, 250, 250, 0.39);
   width: 95%;
   margin: 30px;
@@ -116,9 +114,9 @@ margin-left: 600px;
   grid-gap: 60px;
   color: #4C413F;
   padding-bottom: 50px;
-display: grid;
-transform: perspective(600px) rotateY(0deg);
-grid-template-rows: repeat(auto-fit, 390px);
+  display: grid;
+  transform: perspective(600px) rotateY(0deg);
+  grid-template-rows: repeat(auto-fit, 390px);
 }
 /* tarjeta global */
 .globalCard{
@@ -144,7 +142,7 @@ grid-template-rows: repeat(auto-fit, 390px);
   display: flex;
   overflow: auto;
   position: absolute;
-  transition: all ease 0.5s;
+  transition: all ease 0.4
   transform: perspective(600px) rotateY(180deg);
 }
 .card p {
@@ -245,28 +243,4 @@ footer {
  nav{
   padding 10px 40px 10px 40px;
   }
-=======
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-body{
-    background-image: url("imagenes/fondo.png");
-}
-nav{
-    background:#D8AF39;
-    padding: 10px 40px 10px 70px;
-}
-nav ul{
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-nav ul li.logoStudiosG{
-    flex: auto;
->>>>>>> 88f2961 (avances sonia)
 }
