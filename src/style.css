@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: url("imagenes/fondo.png");
+}
+nav{
+    background:#D8AF39;
+    padding: 10px 40px 10px 70px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li.logoStudiosG{
+    flex: auto;
+}
