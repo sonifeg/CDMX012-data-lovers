@@ -11,6 +11,7 @@ let allFilms = [];
 for(let i = 0; i < data.films.length; i++){ 
     allFilms.push(filmPosters(data.films[i]));
 }
+
 // Imprime tarjetas con los elementos de allMovies (con el poster, titulo y año).
 for(let j = 0; j < allFilms.length; j++){
     let divGlobal = document.createElement("div");
