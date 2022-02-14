@@ -42,7 +42,10 @@ for(let j = 0; j < array.length; j++){
     filmDescription.innerHTML = cutDescription(array[j][2]);
     let btnMoreInfo = document.createElement("button");
     btnMoreInfo.className = "btnMoreInfo"
-    btnMoreInfo.setAttribute("href", "#");
+    let btnLink = document.querySelector(".btnMoreInfo");
+    btnLink.addEventListener("click", () => {
+        document.location.href = "./movies.html";
+    });
     btnMoreInfo.innerHTML = "More Info";
     backCard.appendChild(filmDescription);
     backCard.appendChild(btnMoreInfo);
