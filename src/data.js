@@ -12,6 +12,11 @@ export const cutDescription = (description) => {
   }
 };
 
+//Function to create a link for each movie
+export let createBtnLink = function (id){
+  document.location.href = "./movies.html?id=" + id;
+};
+
 //Funcion de flecha scroll(regresa al inicio)
 const d=document,
 w = window;
@@ -37,7 +42,3 @@ export function scrollTopBtn(btn){
   })
 }
 
-//Function to create a link for each movie
-export let createBtnLink = function (id){
-  document.location.href = "./movies.html?id=" + id;
-}

@@ -1,6 +1,6 @@
 //Import data and functions 
 import data from './data/ghibli/ghibli.js';
-import {filmPosters, cutDescription, scrollTopBtn, createBtnLink} from './data.js';
+import {filmPosters, cutDescription,  createBtnLink, scrollTopBtn} from './data.js';
 
 //CREACION DE ELEMENTOS PARA HOMEPAGE(TARJETAS DE PELICULAS)
 // Poster y titulos de todas las peliculas.
