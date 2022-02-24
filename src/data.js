@@ -3,9 +3,14 @@
 
 //Create an array with different characteristics
 export const filmPosters = (movies) => {
-  let movie = [movies.poster, movies.title, movies.description, movies.release_date, movies.rt_score, movies.id];
+  let movie = [movies.poster, movies.title, movies.description, movies.release_date, movies.rt_score, movies.id, movies.director];
   return movie;
 };
+
+// export const searchValues = (movies) => {
+//   let movie = [movies.title, movies.description, movies.director];
+//   return movie;
+// };
 
 
 //Cut the description up to 400 characters

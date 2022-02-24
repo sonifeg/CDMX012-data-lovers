@@ -315,6 +315,10 @@ input[type="search"]::placeholder {
   position: absolute;
 }
 
+.globalCard .card .movieYr {
+ visibility: hidden;
+}
+
 .globalCard .card .movieRtng {
   bottom: 0;
   width: 100%;

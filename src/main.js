@@ -22,12 +22,16 @@ function createPoster(array) {
         filmPoster.setAttribute("src", array[j][0]);
         let movieYr = document.createElement("p");
         movieYr.className = "movieYr";
-        movieYr.innerHTML = ("<strong>" + allFilms[j][3] + "</strong>");
+        movieYr.innerHTML = ("<strong>" + array[j][3] + "</strong>");
+        let directorName = document.createElement("p");
+        directorName.className = "directorName";
+        directorName.innerHTML = (array[j][6]);
         let movieTitle = document.createElement("p");
         movieTitle.className = "movieTitle";
         movieTitle.innerHTML = "<strong>" + array[j][1] + "</strong>";
         divCreation.appendChild(filmPoster);
         divCreation.appendChild(movieYr);
+        divCreation.appendChild(directorName);
         divCreation.appendChild(movieTitle);
 
         //Backcard
@@ -57,6 +61,7 @@ function createPoster(array) {
     }
 }
    createPoster(allFilms); 
+   
 
 //Use the selected value to filter the movies 
 document.getElementById("selectFilter").addEventListener("change", function() {
@@ -84,11 +89,59 @@ document.getElementById("selectFilter").addEventListener("change", function() {
 });
 
 //Get search input 
-// let searchSelect = document.querySelector("inputSearch");
+ const inputSearch = document.getElementById("searchBar");
+ console.log(allFilms)
+//  inputSearch.addEventListener("keyup", searchValues); 
+//  console.log(searchValues)
 
-// searchSelect.addEventListener('search', function(){
-//     alert('Hi `${searchInput');
+inputSearch.addEventListener("keyup", function(){
+    if (inputSearch !== " "){
+        console.log(inputSearch.value);
+    }
+})
+
+// function searchValues(){
+//     document.getElementById("searchBar").innerHTML = '';
+//     inputSearch.value.toLowerCase();
+//     let allCards = document.getElementById("moviesList");
+//     let dataCards = allCards.getElementsByTagName("div");
+    
+    
+//     for (let i= 0;i < dataCards.length; i++){
+//       let texts= dataCards[i].getElementsByTagName("p")[0];
+    
+      
+//       if(texts){
+//           let textValue= texts.textContent || texts.innerHTML;
+//           if (textValue.toLowerCase().indexOf(inputSearch)){
+//             alldataCards[i].style.display = "";
+//           }else{
+//             dataCards[i].style.display = "none";
+//           }
+
+//       }
+
+//     }
+// }
+
+
+
+
+
+// inputSearch.addEventListener("keyup", (e)=>{
+// const valueIntroduced = e.target.value.toLowerCase()
+// allCards.forEach(values => {
+//     const visibleData = values.title.toLowerCase().includes(valueIntroduced) ||
+//     values.description.toLowerCase().includes(valueIntroduced) ||
+//     values.director.toLowerCase().includes(valueIntroduced)
+//     values.element.classList.toggle("hide", !visibleData)
+// });
 // })
+
+// let arraySearch = []; 
+// for(let i = 0; i < data.films.length; i++){ 
+//     arraySearch.push(searchValues(data.films[i])); 
+// }
 
 
 //   //INTERACCION DE LOS BOTONES
@@ -101,25 +154,33 @@ window.addEventListener("scroll", hideBtn);
 
 
 
-//barra de busqueda
-// const inputSearch = document.getElementById("searchBar");
-// inputSearch.addEventListener("keyup", search);
+// barra de busqueda
+//     const searchBar = document.getElementById("searchBar");
+//     // searchBar.value.toLowerCase();
+//     const cardsList = document.getElementById("moviesList");
+//     let arraySearch = [];
+//     console.log(arraySearch)
 
+//     searchBar.addEventListener("keyup",(e) =>{
+//         const searchVal = e.target.value.toLowerCase();
 
-
-
-
-// const searchBar = document.getElementById("searchBar");
-
-// searchBar.addEventListener("keyup",(e) =>{
-//     const searchTitle = e.target.value.toLowerCase();
-//     const filteredTitle = allFilms[0].filter((title)=>{
-// return(
-//     title.allFilms.includes(searchTitle)
-// );
+//         const filteredValues = arraySearch.filter((movieData)=>{
+//     return(
+//         movieData.title.toLowerCase().includes(searchVal) ||
+//         movieData.description.toLowerCase().includes(searchVal) ||
+//         movieData.director.toLowerCase().includes(searchVal)
+//     );
+//         });
+//         cardsList(arraySearch);
+//         cardsList(filteredValues);
 //     });
-//     filteredTitle(allFilms);
-// });
+       
+//     for(let i = 0; i < data.films.length; i++){ 
+//         arraySearch.push(searchValues(data.films[i])); 
+//     }
+     
+    
+
 
 
 
